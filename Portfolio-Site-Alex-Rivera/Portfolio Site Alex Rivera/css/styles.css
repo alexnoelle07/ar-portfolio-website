@@ -64,6 +64,9 @@ a:focus {
         color: #96BBBB;
         text-decoration: underline;
     }
+p {
+  padding: 10px 30px 0px 0px;
+}
 .button {
         display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
         background-color: #273C2C;
@@ -152,6 +155,13 @@ a:focus {
       }
 
       #work {
+        background-color: #4a6d56;
+        padding: 20px 20px;
+        display: inline-block;
+        width: 100%;
+      }
+
+      #skills {
         background-color: #4a6d56;
         padding: 20px 20px;
         display: inline-block;
