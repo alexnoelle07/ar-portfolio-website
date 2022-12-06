@@ -67,6 +67,10 @@ a:focus {
 p {
   padding: 10px 30px 0px 0px;
 }
+
+* {
+  box-sizing: border-box;
+}
 .button {
         display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
         background-color: #273C2C;
