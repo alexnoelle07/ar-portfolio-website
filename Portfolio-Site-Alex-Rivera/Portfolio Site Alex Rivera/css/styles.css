@@ -6,7 +6,7 @@ Secondary Color (Light Green): #96BBBB;
 
 body {
     font-family: 'Noticia Text', serif;
-    background-color: #ffffff;
+    background-color: #000000;
     font-family: 'Lato', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
@@ -89,7 +89,7 @@ p {
         color:#ffffff;
       }
 .button.contact {
-        background-color: transparent;
+        background-color: #ffffff;
         color: #273C2C;
         text-transform: uppercase;
         border: 2px solid #96BBBB;
@@ -117,29 +117,30 @@ p {
     svg {
         max-width: 32px;
     }
-
-    @keyframes change-color {
-      0% {
-          fill: #000000;
+    .sun {
+        animation-duration: 4s;
+        animation-name: color-change;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
       }
-  
-      50% {
-          fill: #6c7000;
+    @keyframes color-change {
+        0% {fill: #edc655;}
+        50% {fill: #fcffad;}
+        100% {fill: #f76414;}
       }
-  
-      100% {
-          fill: #194e12;
-      }
-  }
-  
-  .cobweb {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
     
+      @keyframes cloud-move {
+        from {transform: translate(0,50px);}
+        to {transform: translate(200px,50px);}
+      }
+      .cloud-front {
+        animation-duration: 30s;
+        animation-name: cloud-move;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+      }
     /* Layout styling */
     header {
         background-color: #4a6d56;
@@ -171,7 +172,7 @@ p {
         padding: 0 15px;
         text-transform: uppercase;
         font-weight: 700;
-        color: #ffffff;
+        color: #000000;
       }
       #hero {
         background-color: #4a6d56;
@@ -189,8 +190,9 @@ p {
       }
 
       #skills {
+        text-align: left;
         background-color: #4a6d56;
-        padding: 20px 20px;
+        padding: 20px 60px;
         display: inline-block;
         width: 100%;
       }
@@ -263,7 +265,7 @@ nav>ul>li {
 nav>ul>li>a {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    color: #AC5D71;
+    color: #000000;
     font-weight: 500;
     letter-spacing: 0.05em;
     padding: 0;
@@ -273,7 +275,7 @@ nav>ul>li>a {
 }
 
 nav>ul>li>a:hover {
-    color: #6e0739;
+    color: #0a7241;
     border-bottom: 3px solid #000000;
 }
 
@@ -288,6 +290,8 @@ nav>ul>li>a:hover {
 .navtoggle.responsive li {
     border-top: 0 solid white;
 }
+
+
 
 main {
     padding-top: 150px;
@@ -376,7 +380,7 @@ margin-bottom: 10px;
 
 [class*="col-"] {
     float: left;
-    padding: 0 15px;
+    padding: 0 30px;
 }
 
 .row::after {
@@ -424,7 +428,7 @@ Large devices (1024px or larger)
   nav>ul>li>a {
       font-family: 'Poppins', sans-serif;
       font-size: 18px;
-      color: #ffffff;
+      color: #000000;
       font-weight: 500;
       letter-spacing: 0.05em;
       padding: 0;
@@ -491,8 +495,8 @@ Large devices (1024px or larger)
   }
 
   #hero h1 {
-      text-align: left;
-      font-family: 'Caveat', cursive;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
       color: #ffffff;
       font-size: 66px;
       font-weight: 400;
@@ -501,19 +505,29 @@ Large devices (1024px or larger)
   }
 
   #hero p {
-      text-align: left;
+      text-align: center;
       font-family: 'Poppins', sans-serif;
       font-size: 18px;
       font-weight: 400;
       padding: 10px 0;
       line-height: 1.5;
-      margin-left: 25px;
+      margin-left: 100px;
       max-width: 650px;
   }
 
-  .my.story {
-      width: 75%;
+  p.my-story {
+      display: inline-block;
+      margin-left: 100px;
   }
+
+  .col-lg-7 {
+    width: 60%;
+}
+
+.col-lg-5 {
+    width: 40%;
+}
+
 
   .about img {
       width: 70%;
@@ -571,7 +585,7 @@ X-large devices (1440px or larger)
   nav>ul>li>a {
       font-family: 'Poppins', sans-serif;
       font-size: 22px;
-      color: #ffffff;
+      color: #000000;
       font-weight: 500;
       letter-spacing: 0.05em;
       padding: 0;
@@ -663,12 +677,14 @@ X-large devices (1440px or larger)
       font-size: 20px;
   }
 
-  .my.story {
-      width: 60%;
-  }
+p.my-story {
+    display: inline-block;
+    text-align: center;
+    margin-left: 200px;
+}
 
   .about img {
-      width: 65%;
+      width: 85%;
       margin-bottom: 25px;
   }
 
@@ -676,12 +692,13 @@ X-large devices (1440px or larger)
       float: left;
       padding: 100px 0;
   }
-  .col-lg-8 {
-      width: 60%;
+  .column .desc {
+    margin-top: 20px;
+    padding-left: 20px;
   }
-
-  .col-lg-4 {
-      width: 40%;
+  .button .desc {
+    display: inline;
+    margin: 0 auto;
   }
 
   .content {
