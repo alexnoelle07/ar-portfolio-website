@@ -6,12 +6,15 @@ Secondary Color (Light Green): #96BBBB;
 
 body {
     font-family: 'Noticia Text', serif;
-    background-color: #000000;
+    background-color: #4a6d56;
     font-family: 'Lato', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #ffffff;
+  }
+  main {
+    padding-top: 56px;
   }
   h1, h2, h3, h4 {
     line-height: 1.4;
@@ -144,11 +147,25 @@ p {
     /* Layout styling */
     header {
         background-color: #4a6d56;
-        text-align: center;
-        padding: 10px;
+        padding: 10px 0px 4px;
         margin: 10px;
       
       }
+      .navtoggle, .navtoggle.responsive {
+        position: relative;
+      }
+
+      .navtoggle li .icon {
+        position: absolute;
+        right: 0;
+        top: 2px;
+        font-size: 20px;
+        padding-right: 0;
+      }
+      .navtoggle.responsive li  {
+        display: block;
+      }
+      
     .container {
         padding: 0 15px;
       }
@@ -159,14 +176,16 @@ p {
         text-align: center; /* Centers text */
       }
     .logo {
-        max-width: 250px;
+        max-width: 100px;
+        float: left;
       }
       nav > ul {
         list-style-type: none;
         padding: 0;
+        margin: 0;
       }
-      nav > ul > li {
-        display: inline-block;
+      .navtoggle li:not(:last-child) {
+        display: none;
       }
       nav > ul > li > a {
         padding: 0 15px;
@@ -290,7 +309,6 @@ nav>ul>li>a:hover {
 .navtoggle.responsive li {
     border-top: 0 solid white;
 }
-
 
 
 main {

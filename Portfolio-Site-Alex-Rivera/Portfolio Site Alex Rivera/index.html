@@ -18,25 +18,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  
+  <script src="https://kit.fontawesome.com/caf9523ed3.js" crossorigin="anonymous"></script>
   <title>Alex Noelle Rivera</title>
 	</head>
 	<body>
 		<header>
 			<!--Logo-->
 			<div class="container">
+				<div class="navtoggle" id="myNavtoggle">
 				<a href="index.html" class="logo">
 					<img src="images/cobweb.svg"  class="cobweb" height="200px" width="200px">
 				</a>
-			</div>
+			
 			<!--Nav-->
 			<nav>
 				<ul class="navigation">
 				<li><a href="about.html">About</a></li>
 				<li><a href="work.html">Work</a></li>
 				<li><a href="contact.html">Contact</a></li>
+				<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 			</ul>
 		</nav>
+		</div>
+		</div>
+		</div>
 		</header>
 		<!--Main Area-->
 		<main>
@@ -791,6 +796,10 @@
 			<!-- / Social Media -->
 		</footer>
 		<!-- /Footer-->
+		<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
