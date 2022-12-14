@@ -119,6 +119,7 @@ p {
     }
     svg {
         max-width: 32px;
+        color: black;
     }
     .sun {
         animation-duration: 4s;
@@ -154,7 +155,9 @@ p {
       .navtoggle, .navtoggle.responsive {
         position: relative;
       }
-
+      .navtoggle li:not(:last-child) {
+        display: none;
+      }
       .navtoggle li .icon {
         position: absolute;
         right: 0;
@@ -183,10 +186,11 @@ p {
         list-style-type: none;
         padding: 0;
         margin: 0;
+        text-align: right;
+        padding-top: 40px;
+        padding-right: 20px;
       }
-      .navtoggle li:not(:last-child) {
-        display: none;
-      }
+     
       nav > ul > li > a {
         padding: 0 15px;
         text-transform: uppercase;
@@ -233,12 +237,15 @@ p {
         color: #ffffff;
         padding: 0.67em;
     }
-    #resume, #skills{
+    #skills{
         background-color: #4a6d56;
         padding: 20px 0;
         display: inline-block;
         width: 100%;
       }
+    #resume {
+      text-align: center;
+    }
     
     #copyright {
         text-align: center;
@@ -264,7 +271,7 @@ Medium devices (640px and larger)
 
 header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 5px 0 13px;
 }
 
 nav {
@@ -428,11 +435,11 @@ Large devices (1024px or larger)
 
   header {
       text-align: unset;
-      padding: 60px 0 20px 0;
+      padding: 10px 0 20px 0;
   }
 
   .logo {
-      max-width: 250px;
+      max-width: 100px;
       padding: 0;
       margin: 10px 10px;
   }
