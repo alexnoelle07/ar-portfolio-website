@@ -1,12 +1,12 @@
 /*
 Colors used:
-Primary Color (Green): #273C2C;
+Primary Color (Green):  #344C3C;
 Secondary Color (Light Green): #96BBBB;
 */
 
 body {
     font-family: 'Noticia Text', serif;
-    background-color: #4a6d56;
+    background-color:  #344C3C;
     font-family: 'Lato', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
@@ -61,7 +61,7 @@ body {
   }
   a:active { /* selected link */
     background-color: inherit;
-    color: #273C2C;
+    color: #ffffff;
   }
 a:focus {
         color: #96BBBB;
@@ -147,7 +147,7 @@ p {
       }
     /* Layout styling */
     header {
-        background-color: #4a6d56;
+        background-color:  #344C3C;
         padding: 10px 0px 4px;
         margin: 10px;
       
@@ -212,7 +212,7 @@ p {
         width: 100%;
       }
 
-      #skills {
+      #skillset {
         text-align: left;
         background-color: #4a6d56;
         padding: 20px 60px;
@@ -301,7 +301,7 @@ nav>ul>li>a {
 }
 
 nav>ul>li>a:hover {
-    color: #0a7241;
+    color: #ffffff;
     border-bottom: 3px solid #000000;
 }
 
@@ -764,3 +764,4 @@ font-size: 12px;
       margin: 0;
   }
 
+}
